@@ -115,7 +115,7 @@ p .index-link{
     text-decoration: none;
 }
 .instagram{
-    background-image: url(..img/instagram.png);
+    background-image: url(../img/instagram.png);
     background-repeat: no-repeat;
     background-position:center;
     background-size: contain;
