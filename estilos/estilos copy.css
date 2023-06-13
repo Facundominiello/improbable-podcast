@@ -1,0 +1,474 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    height: 20vh;
+    background-color: #1E1E1E;
+}
+main{
+    height: 70vh;
+    background-color: #262626;
+}
+footer{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    height: 10vh;
+    background-color: #1E1E1E;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.logo-footer{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+.navegador{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+.container-fluid{
+    z-index: 100;
+    padding: 0 !important;
+}
+.navbar-toggler{
+    margin-top: 3rem;
+    margin-right: 3rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #7d6868 !important;
+}
+.navbar-toggler-icon{
+    width: 3rem !important;
+}
+.show{
+    height: 40rem;
+}
+.collapse, .show, .navbar-collapse{
+    background-color: #1E1E1E;
+}
+.navegador-lista, .navbar-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.navegador-lista li, li, .navbar-nav li{
+    display: inline-block;  
+    margin: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+}
+.navegador-lista a, .navbar-nav a{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+.pio-ottado h2 a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.facundo-miniello h2 a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+section{
+    position: relative;
+    bottom: 70wh;
+}
+.contenedor-home{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5rem;
+}
+.texto-home{
+    position: relative;
+    top: 5vh;
+}
+.parrafo-presentacion, .titulo-presentacion{
+    position: absolute;
+    color: #F2F2F2;
+}
+.titulo-presentacion{
+    top: 17vh;
+    font-size: 3rem; 
+}
+.parrafo-presentacion{
+    padding-right: 9rem;
+    top: 25vh;
+    font-size: 2rem;
+}
+p .index-link{
+    color: #5858b3;
+    text-decoration: none;
+}
+.instagram{
+    background-image: url(../../coder-house/img/instagram.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+}
+.img-home{
+    height: 70vh;
+    margin-left: 0;
+}
+.img-home-2{
+    display: none;
+}
+.contacto-section{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacto-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 3vh;
+    font-size: 3rem;
+    color: #F2F2F2;
+}
+.contacto-formulario-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nombre{
+    width: 43rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    border: .1rem solid #F2F2F2; 
+    margin: 1rem 3rem;
+}
+.email{
+    width: 43rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    border: .1rem solid #F2F2F2; 
+    margin: 1rem 3rem;
+}
+.mensaje{
+    width: 43rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    border: .1rem solid #F2F2F2; 
+    margin: 1rem 3rem;
+}
+.main-input{
+    width: 35rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    margin-top: .39rem;
+    background-color:#262626 ;
+    border: none;
+    outline: none;
+}
+.main-input:hover{
+    background-color: #262626;
+}
+.enviar{
+    width: 43rem;
+    height: 5rem;
+    margin-left: .01rem;
+    margin-top: 1rem;
+    background-color:#ffb379 ;
+    border: 1px solid black;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.podcast-titulo{
+    display: flex;
+    font-size: 4.5rem;
+    justify-content: center;
+    padding: 10vh 0 5vh 0;
+    color: #F2F2F2;
+
+}
+.podcast{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.geeks-en-el-sofa{
+    width: 25rem;
+    border-radius: 3rem;
+    box-shadow: .2rem .2rem 1rem .1rem black;
+}
+.haciendo-historia{
+    width: 25rem;
+    border-radius: 3rem;
+    box-shadow: 0.2rem 0.2rem 1rem 0.1rem black;
+}
+.contenedor-geeks-en-el-sofa{
+    position: absolute;
+    top: 23vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+}
+.iframe-geeks-en-el-sofa{
+    width: 45rem;
+    box-shadow: .2rem .2rem 1rem .1rem black;
+    border: 2px solid #ffb379;
+}
+.titulo-geeks-en-el-sofa, .sinopsis-geeks-en-el-sofa{
+    text-align: justify;
+    color: #F2F2F2;
+}
+.titulo-geeks-en-el-sofa{
+    font-size: 3rem; 
+}
+.sinopsis-geeks-en-el-sofa{
+    padding-right: 10rem;
+    font-size: 2rem;
+}
+.quienes-somos-contenedor{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.quienes-somos-titulo{
+    display: flex;
+    font-size: 4.5rem;
+    margin: 10vh 0 0;
+    position: relative;
+    justify-content: center;
+    color: #F2F2F2;
+}
+.quienes-somos-integrantes{
+    display:grid;
+    height: inherit;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 30rem;
+}
+.facundo-miniello{
+    position: relative;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facundo-miniello img{
+    position: relative;
+    top: 1rem;
+    width: 10rem;
+    border-radius: 100rem;
+
+}
+.facundo-miniello h2{
+    position: relative;
+    top: 2rem;
+    font-weight: 600;
+}
+.facundo-miniello p{
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    top: 2.5rem;
+    color: #F2F2F2;
+}
+.pio-ottado{
+    position: relative;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+}
+.pio-ottado img{
+    position: relative;
+    top: 1rem;
+    width: 10rem;
+    border-radius: 100rem;
+}
+.pio-ottado h2{
+    position: relative;
+    top: 2rem;
+    font-weight: 600;
+}
+.pio-ottado p{
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    top: 2.5rem;
+}
+.tienda-main{
+    overflow: auto;
+}
+.tienda-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 3vh;
+    font-size: 3rem;
+    color: #F2F2F2;
+}
+.tienda-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 3rem 0;
+}
+.articulo-remera, .articulo-gorra, .articulo-buzo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #ffb379;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem .1rem black;
+}
+.remera-titulo, .gorra-titulo, .buzo-titulo{
+    font-size: 2rem;
+    text-align: center;
+    color: #F2F2F2;
+}
+.remera-precio, .gorra-precio, .buzo-precio{
+    font-size: 2rem;
+    text-align: center;
+    color: #F2F2F2;
+}
+.remera-compra, .gorra-compra, .buzo-compra{
+    width: 19rem;
+    height: 5rem;
+    margin: 1rem 0;
+    background-color:#ffb379 ;
+    border: 1px solid black;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.articulo-remera{
+    padding: 0 5rem;
+}
+.remera-img{
+    width: 20rem;
+}
+.gorra-img{
+    width: 30rem;
+    padding-top: 5rem;
+}
+.gorra-titulo{
+    padding-top: 5rem;
+}
+.articulo-buzo{
+    padding: 0 5rem;
+}
+.buzo-img{
+    width: 20rem;
+}
+@media (max-width: 988px){
+    main{
+        overflow: auto;
+    }
+    .contenedor-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-home{
+        display: none;
+    }
+    .img-home-2{
+        display: inline-block;
+        width: 100%;
+    }
+    .texto-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        text-align: justify;
+    }
+    .titulo-presentacion{
+        top: -7vh;
+    }
+    .parrafo-presentacion{
+        padding: 0 0 5rem 0;
+        top: 0;
+    }
+    .quienes-somos-integrantes{
+        padding-top: 2rem;
+        gap: 0;    }
+    .contenedor-geeks-en-el-sofa{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        top: 10vh;
+    }
+    .titulo-geeks-en-el-sofa, .sinopsis-geeks-en-el-sofa{
+        text-align: center;
+    }
+    .sinopsis-geeks-en-el-sofa{
+        padding: 0 15rem;
+    }
+    .tienda-contenedor{
+        gap: 35rem;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+    }
+    .articulo-buzo, .articulo-gorra, .articulo-remera{
+        scroll-snap-align: center;
+    }
+    .articulo-buzo{
+        position: relative;
+        right: 18rem;
+    }
+    .articulo-remera{
+        position: relative;
+        left: 18rem;
+    }
+}
+@media (max-width: 580px){
+    .quienes-somos-titulo, .podcast-titulo{
+        text-align: center;
+    }
+    .quienes-somos-integrantes{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .pio-ottado, .contenedor-geeks-en-el-sofa{
+        padding-bottom: 5rem;
+    }
+    .podcast{
+        grid-template-columns: 1fr;
+        gap: 8rem;
+        padding-bottom: 5rem;
+    }
+    .iframe-geeks-en-el-sofa{
+        width: 30rem;
+    }
+    .sinopsis-geeks-en-el-sofa{
+        padding: 0 4rem;
+    }
+    .nombre, .email, .mensaje, .enviar{
+        width: 100%;
+    }
+    .main-input{
+        width: 90%;
+    }
+}
