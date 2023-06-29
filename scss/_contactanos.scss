@@ -1,0 +1,89 @@
+@mixin labels{
+    width: 43rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 10rem;
+    border: .1rem solid $whithe; 
+    margin: 1rem 3rem;
+}
+@mixin mobile-witdh{
+    width: 100%;
+}
+
+.contacto-section{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    .contacto-titulo{
+        display: flex;
+        justify-content: center;
+        padding: 5vh 0 3vh;
+        font-size: 3rem;
+        color: $whithe;
+    }
+}
+.contacto-formulario-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nombre{
+        @include labels;
+
+        @include mobile{
+            @include mobile-witdh;
+        }
+    }
+    .email{
+        @include labels;
+
+        @include mobile{
+            @include mobile-witdh;
+        }
+    }
+    .mensaje{
+        @include labels;
+
+        @include mobile{
+            @include mobile-witdh;
+        }
+    }
+    .enviar{
+        width: 43rem;
+        height: 5rem;
+        margin-left: .01rem;
+        margin-top: 1rem;
+        background-color: $orange;
+        border: 1px solid black;
+        border-radius: 10rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        @include mobile{
+            @include mobile-witdh;
+        }
+    }
+}
+
+.main-input{
+    width: 35rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    margin-top: .39rem;
+    background-color:$secondary-color ;
+    border: none;
+    outline: none;
+    &:hover{
+        background-color: $secondary-color;
+    }
+
+    @include mobile{
+        width: 90%;
+    }
+}
+
+
+
+
+

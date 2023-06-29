@@ -1,0 +1,134 @@
+@import "media-queries";
+@mixin foto-perfil {
+    position: relative;
+    top: 1rem;
+    width: 10rem;
+    border-radius: 100rem;
+}
+@mixin distribucion{
+    position: relative;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $whithe;
+}
+@mixin titulo{
+    position: relative;
+    top: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+@mixin link-perfil{
+    text-decoration: none;
+    color: $whithe;
+}
+@mixin biografia{
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    top: 2.5rem;
+}
+@mixin p-mobile{
+    width: 49rem;
+    font-size: 1.8rem;
+}
+@mixin h2-mobile{
+    font-size: 2rem;
+}
+
+main{
+    overflow: auto;
+}
+.quienes-somos-contenedor{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    .quienes-somos-titulo{
+        display: flex;
+        font-size: 4.5rem;
+        margin: 10vh 0 0;
+        position: relative;
+        justify-content: center;
+        color: $whithe;
+
+        @include mobile{
+            text-align: center; 
+        }
+    }
+    .quienes-somos-integrantes{
+        display:grid;
+        height: inherit;
+        height: 50vh;
+        grid-template-columns: 1fr 1fr;
+        gap: 30rem;
+
+        @include tablet{
+            padding-top: 2rem;
+            gap: 0; 
+        }
+        @include mobile{
+            grid-template-columns: 1fr;
+            gap: 5rem;
+        }
+    }
+}
+
+.facundo-miniello{
+    @include distribucion;
+    img{
+        @include foto-perfil;
+    }
+    h2{
+        @include titulo;
+        a{
+            @include link-perfil;
+        }
+                
+        @include mobile{
+            @include h2-mobile;
+        }
+    }
+    p{
+        @include biografia;
+        @include mobile{
+            @include p-mobile;
+        }
+    }
+}
+.pio-ottado{
+    @include distribucion;
+    @include mobile{
+        padding-bottom: 5rem;
+    }
+    img{
+        @include foto-perfil;
+    }
+    h2{
+        @include titulo;
+        @include mobile{
+            @include h2-mobile;
+        }
+        a{
+            @include link-perfil;
+        }                    
+    }
+    p{
+        @include biografia;
+        @include mobile{
+            @include p-mobile;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

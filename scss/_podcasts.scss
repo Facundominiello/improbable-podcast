@@ -1,0 +1,32 @@
+
+.podcast-titulo{
+    display: flex;
+    font-size: 4.5rem;
+    justify-content: center;
+    padding: 10vh 0 5vh 0;
+    color: $whithe;
+    
+    @include mobile{
+        text-align: center;
+    }
+}
+
+.podcast{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    @include mobile{
+        grid-template-columns: 1fr;
+        gap: 8rem;
+        padding-bottom: 5rem;
+    }
+    .geeks-en-el-sofa{
+        width: 25rem;
+        border-radius: 3rem;
+        box-shadow: .2rem .2rem 1rem .1rem black;
+    }
+    .haciendo-historia{
+        @extend .geeks-en-el-sofa;
+    }
+}

@@ -1,0 +1,126 @@
+@mixin precio{
+    font-size: 2rem;
+    text-align: center;
+    color: $whithe;
+}
+@mixin compra{
+    width: 19rem;
+    height: 5rem;
+    margin: 1rem 0;
+    background-color:$orange ;
+    border: 1px solid black;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@mixin titulo{
+    font-size: 2rem;
+    text-align: center;
+    color: $whithe;
+}
+@mixin articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid $orange;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem .1rem black;
+}
+@mixin scroll{
+    scroll-snap-align: center;
+}
+
+.tienda-main{
+    overflow: auto;
+    .tienda-titulo{
+        display: flex;
+        justify-content: center;
+        padding: 5vh 0 3vh;
+        font-size: 3rem;
+        color: $whithe;
+    }
+    .tienda-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 3rem 0;
+
+        @include tablet{
+            gap: 35rem;
+            overflow-x: scroll;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x proximity;
+        }
+    }
+}
+
+
+.articulo-remera{
+    @include articulo;
+    padding: 0 5rem;
+
+    @include tablet{
+        @include scroll;
+        position: relative;
+        left: 18rem;
+    }
+    .remera-img{
+        width: 20rem;
+    }
+    .remera-titulo{
+        @include titulo;
+    } 
+    .remera-precio{
+        @include precio;
+    } 
+    .remera-compra{
+        @include compra;
+    } 
+} 
+.articulo-gorra{
+    @include articulo;
+    padding-top: 5rem;
+
+    @include tablet{
+        @include scroll;
+    }
+    .gorra-img{
+        width: 30rem;
+        padding-top: 5rem;
+    }
+    .gorra-titulo{
+        @include titulo;
+    }
+    .gorra-precio{
+        @include precio;
+    }
+    .gorra-compra{
+        @include compra;
+    } 
+} 
+.articulo-buzo{
+    @include articulo;
+    padding: 0 5rem;
+
+    @include tablet{
+        @include scroll;
+        position: relative;
+        right: 18rem;
+    }
+    .buzo-img{
+        width: 20rem;
+    }
+    .buzo-titulo{
+        @include titulo;
+    }
+    .buzo-precio{
+        @include precio;
+    
+    }
+    .buzo-compra{
+        @include compra;
+    }
+}
+
+

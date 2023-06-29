@@ -1,0 +1,184 @@
+
+@import "variables";
+@import "quienes-somos";
+@import "contactanos";
+@import "podcasts";
+@import "geeks-en-el-sofa";
+@import "tienda";
+@import "media-queries";
+
+@mixin presentacion{
+    position: absolute;
+    color: $whithe;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    height: 15vh;
+    background-color: $primary-color;
+}
+main{
+    height: 75vh;
+    background-color: $secondary-color;
+}
+footer{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    height: 10vh;
+    background-color: $primary-color;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.logo-footer{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+.navegador{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+.container-fluid{
+    z-index: 100;
+    padding: 0 !important;
+    .navbar-toggler{
+        margin-top: 3rem;
+        margin-right: 3rem;
+        width: 5rem;
+        height: 5rem;
+        background-color: #7d6868 !important;
+        .navbar-toggler-icon{
+            width: 3rem !important;
+        }
+    }
+}
+.navbar-collapse{
+    background-color: $primary-color;
+}
+.show{
+    background-color: $primary-color;
+    height: 40rem; 
+    .navegador-lista, .navbar-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+
+        @include tablet{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+    }
+}
+.nav-item{
+    display: inline-block;  
+    margin: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    .nav-link{
+        color: $whithe;
+        text-decoration: none;
+    }                
+}
+
+section{
+    position: relative;
+    bottom: 70wh;
+    .contenedor-home{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 5rem;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img-home{
+            height: 70vh;
+            margin-left: 0;
+
+            @include tablet{
+                display: none;
+            }
+        }
+        .img-home-2{
+            display: none;
+
+            @include tablet{
+                display: inline-block;
+                width: 100%;            
+            }
+        }
+        .texto-home{
+            position: relative;
+            top: 5vh;
+
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                text-align: justify;
+            }
+            .titulo-presentacion{
+                @include presentacion;
+                top: 17vh;
+                font-size: 3rem; 
+
+                @include tablet{
+                    top: -7vh;
+                }
+            }
+            .parrafo-presentacion{
+                @include presentacion;
+                padding-right: 9rem;
+                top: 25vh;
+                font-size: 2rem;
+
+                @include tablet{
+                    padding: 0 0 5rem 0;
+                    top: 0;
+                }
+                .index-link{
+                    color: #5858b3;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.instagram{
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2rem;
+}
+
+
+
+

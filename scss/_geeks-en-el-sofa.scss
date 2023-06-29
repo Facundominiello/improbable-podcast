@@ -1,0 +1,52 @@
+.contenedor-geeks-en-el-sofa{
+    position: absolute;
+    top: 23vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+
+    @include tablet{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        top: 10vh;
+        @include mobile{
+            padding-bottom: 5rem;
+        }
+    }
+    .iframe-geeks-en-el-sofa{
+        width: 45rem;
+        box-shadow: .2rem .2rem 1rem .1rem black;
+        border: 2px solid $orange;
+
+        @include mobile{
+            width: 30rem;
+        }
+    }
+}
+
+generales{
+    text-align: justify;
+    color: $whithe;
+    @include tablet{
+        text-align: center;
+    }
+}
+.titulo-geeks-en-el-sofa{
+    @extend generales;
+    font-size: 3rem; 
+}
+.sinopsis-geeks-en-el-sofa{
+    @extend generales;
+    padding-right: 10rem;
+    font-size: 2rem;
+
+    @include tablet{
+        padding: 0 15rem;
+        @include mobile{
+            padding: 0 4rem;
+        }
+    }
+
+}
