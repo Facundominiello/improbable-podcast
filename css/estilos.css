@@ -25,12 +25,10 @@ main {
   height: inherit;
   height: 50vh;
   grid-template-columns: 1fr 1fr;
-  gap: 30rem;
 }
 @media screen and (max-width: 988px) {
   .quienes-somos-contenedor .quienes-somos-integrantes {
     padding-top: 2rem;
-    gap: 0;
   }
 }
 @media screen and (max-width: 580px) {
