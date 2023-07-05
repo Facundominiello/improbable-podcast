@@ -471,7 +471,7 @@ html {
 }
 
 header {
-  height: 15vh;
+  height: 16vh;
   background-color: #1E1E1E;
 }
 
@@ -492,7 +492,6 @@ footer {
   width: 10rem;
   height: 10rem;
   margin-left: 1rem;
-  margin-top: 1rem;
 }
 
 .logo-footer {
@@ -524,6 +523,10 @@ footer {
 
 .navbar-collapse {
   background-color: #1E1E1E;
+}
+.navbar-collapse .navbar-nav {
+  position: relative;
+  bottom: 1rem;
 }
 
 .show {
