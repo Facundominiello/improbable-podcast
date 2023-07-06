@@ -22,6 +22,10 @@
 @mixin link-perfil{
     text-decoration: none;
     color: $whithe;
+    transition: color 0.3s;
+    &:hover {
+       color: black;
+    }
 }
 @mixin biografia{
     width: 20rem;
@@ -30,7 +34,7 @@
     top: 2.5rem;
 }
 @mixin p-mobile{
-    width: 49rem;
+    width: 80vw;
     font-size: 1.8rem;
 }
 @mixin h2-mobile{
