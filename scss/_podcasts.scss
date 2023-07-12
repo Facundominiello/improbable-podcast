@@ -22,11 +22,15 @@
         padding-bottom: 5rem;
     }
     .geeks-en-el-sofa{
+        @extend .haciendo-historia;
+        &:hover {
+            transition: 1s;
+            width: 27rem
+        }
+    }
+    .haciendo-historia{
         width: 25rem;
         border-radius: 3rem;
         box-shadow: .2rem .2rem 1rem .1rem black;
-    }
-    .haciendo-historia{
-        @extend .geeks-en-el-sofa;
     }
 }

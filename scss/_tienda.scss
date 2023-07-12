@@ -12,6 +12,10 @@
     border-radius: 10rem;
     font-size: 1.2rem;
     font-weight: 600;
+    &:hover{
+        transition: 1s;
+        background-color: #ec893d;
+    }
 }
 @mixin titulo{
     font-size: 2rem;
@@ -30,6 +34,16 @@
 @mixin scroll{
     scroll-snap-align: center;
 }
+@keyframes fadeIn-tienda-contenedor {
+    from {
+      width: 0%;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+}
 
 .tienda-main{
     overflow: auto;
@@ -41,6 +55,9 @@
         color: $whithe;
     }
     .tienda-contenedor{
+        width: 0;
+        opacity: 0;
+        animation: fadeIn-tienda-contenedor 1s ease-in-out forwards;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;

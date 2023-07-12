@@ -59,6 +59,10 @@
         border-radius: 10rem;
         font-size: 1.2rem;
         font-weight: 600;
+        &:hover{
+            transition: 1s;
+            background-color: #ec893d;
+        }
 
         @include mobile{
             @include mobile-witdh;
@@ -74,6 +78,7 @@
     background-color:$secondary-color ;
     border: none;
     outline: none;
+    color: $whithe;
     &:hover{
         background-color: $secondary-color;
     }

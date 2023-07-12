@@ -11,11 +11,13 @@
     position: absolute;
     color: $whithe;
 }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -27,6 +29,9 @@ header{
 main{
     height: 75vh;
     background-color: $secondary-color;
+    @include tablet{
+        overflow: auto;
+    }
 }
 footer{
     display: grid;
@@ -113,7 +118,7 @@ section{
             align-items: center;
         }
         .img-home{
-            height: 70vh;
+            height: 75vh;
             margin-left: 0;
 
             @include tablet{

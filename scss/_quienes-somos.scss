@@ -1,5 +1,7 @@
 @import "media-queries";
 @mixin foto-perfil {
+    opacity: 0;
+    animation: fadeIn-foto-perfil 0.5s ease-in-out forwards;
     position: relative;
     top: 1rem;
     width: 10rem;
@@ -20,6 +22,8 @@
     font-size: 20px;
 }
 @mixin link-perfil{
+    opacity: 0;
+    animation: fadeIn-biografia 2s ease-in-out forwards;
     text-decoration: none;
     color: $whithe;
     transition: color 0.3s;
@@ -28,6 +32,8 @@
     }
 }
 @mixin biografia{
+    opacity: 0;
+    animation: fadeIn-biografia 2s ease-in-out forwards;
     width: 20rem;
     text-align: center;
     position: relative;
@@ -40,10 +46,25 @@
 @mixin h2-mobile{
     font-size: 2rem;
 }
-
-main{
-    overflow: auto;
+@keyframes fadeIn-biografia {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
+@keyframes fadeIn-foto-perfil {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+
 .quienes-somos-contenedor{
     height: 70vh;
     display: grid;
@@ -78,6 +99,7 @@ main{
 
 .facundo-miniello{
     @include distribucion;
+    left: 10rem;
     img{
         @include foto-perfil;
     }
@@ -100,6 +122,7 @@ main{
 }
 .pio-ottado{
     @include distribucion;
+    right: 10rem;
     @include mobile{
         padding-bottom: 5rem;
     }

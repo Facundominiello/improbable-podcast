@@ -1,7 +1,19 @@
-main {
-  overflow: auto;
+@keyframes fadeIn-biografia {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
+@keyframes fadeIn-foto-perfil {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .quienes-somos-contenedor {
   height: 70vh;
   display: grid;
@@ -45,8 +57,11 @@ main {
   flex-direction: column;
   align-items: center;
   color: #F2F2F2;
+  left: 10rem;
 }
 .facundo-miniello img {
+  opacity: 0;
+  animation: fadeIn-foto-perfil 0.5s ease-in-out forwards;
   position: relative;
   top: 1rem;
   width: 10rem;
@@ -59,6 +74,8 @@ main {
   font-size: 20px;
 }
 .facundo-miniello h2 a {
+  opacity: 0;
+  animation: fadeIn-biografia 2s ease-in-out forwards;
   text-decoration: none;
   color: #F2F2F2;
   transition: color 0.3s;
@@ -72,6 +89,8 @@ main {
   }
 }
 .facundo-miniello p {
+  opacity: 0;
+  animation: fadeIn-biografia 2s ease-in-out forwards;
   width: 20rem;
   text-align: center;
   position: relative;
@@ -91,6 +110,7 @@ main {
   flex-direction: column;
   align-items: center;
   color: #F2F2F2;
+  right: 10rem;
 }
 @media screen and (max-width: 580px) {
   .pio-ottado {
@@ -98,6 +118,8 @@ main {
   }
 }
 .pio-ottado img {
+  opacity: 0;
+  animation: fadeIn-foto-perfil 0.5s ease-in-out forwards;
   position: relative;
   top: 1rem;
   width: 10rem;
@@ -115,6 +137,8 @@ main {
   }
 }
 .pio-ottado h2 a {
+  opacity: 0;
+  animation: fadeIn-biografia 2s ease-in-out forwards;
   text-decoration: none;
   color: #F2F2F2;
   transition: color 0.3s;
@@ -123,6 +147,8 @@ main {
   color: black;
 }
 .pio-ottado p {
+  opacity: 0;
+  animation: fadeIn-biografia 2s ease-in-out forwards;
   width: 20rem;
   text-align: center;
   position: relative;
@@ -205,6 +231,10 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.contacto-formulario-contenedor .enviar:hover {
+  transition: 1s;
+  background-color: #ec893d;
+}
 @media screen and (max-width: 580px) {
   .contacto-formulario-contenedor .enviar {
     width: 100%;
@@ -219,6 +249,7 @@ main {
   background-color: #262626;
   border: none;
   outline: none;
+  color: #F2F2F2;
 }
 .main-input:hover {
   background-color: #262626;
@@ -254,11 +285,16 @@ main {
     padding-bottom: 5rem;
   }
 }
-.podcast .geeks-en-el-sofa, .podcast .haciendo-historia {
+.podcast .geeks-en-el-sofa:hover {
+  transition: 1s;
+  width: 27rem;
+}
+.podcast .haciendo-historia, .podcast .geeks-en-el-sofa {
   width: 25rem;
   border-radius: 3rem;
   box-shadow: 0.2rem 0.2rem 1rem 0.1rem black;
 }
+
 .contenedor-geeks-en-el-sofa {
   position: absolute;
   top: 23vh;
@@ -320,6 +356,16 @@ generales, .sinopsis-geeks-en-el-sofa, .titulo-geeks-en-el-sofa {
   }
 }
 
+@keyframes fadeIn-tienda-contenedor {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
 .tienda-main {
   overflow: auto;
 }
@@ -331,6 +377,9 @@ generales, .sinopsis-geeks-en-el-sofa, .titulo-geeks-en-el-sofa {
   color: #F2F2F2;
 }
 .tienda-main .tienda-contenedor {
+  width: 0;
+  opacity: 0;
+  animation: fadeIn-tienda-contenedor 1s ease-in-out forwards;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -385,6 +434,10 @@ generales, .sinopsis-geeks-en-el-sofa, .titulo-geeks-en-el-sofa {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.articulo-remera .remera-compra:hover {
+  transition: 1s;
+  background-color: #ec893d;
+}
 
 .articulo-gorra {
   display: flex;
@@ -424,6 +477,10 @@ generales, .sinopsis-geeks-en-el-sofa, .titulo-geeks-en-el-sofa {
   border-radius: 10rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+.articulo-gorra .gorra-compra:hover {
+  transition: 1s;
+  background-color: #ec893d;
 }
 
 .articulo-buzo {
@@ -466,6 +523,10 @@ generales, .sinopsis-geeks-en-el-sofa, .titulo-geeks-en-el-sofa {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.articulo-buzo .buzo-compra:hover {
+  transition: 1s;
+  background-color: #ec893d;
+}
 
 * {
   padding: 0;
@@ -486,6 +547,11 @@ header {
 main {
   height: 75vh;
   background-color: #262626;
+}
+@media screen and (max-width: 988px) {
+  main {
+    overflow: auto;
+  }
 }
 
 footer {
@@ -584,7 +650,7 @@ section .contenedor-home {
   }
 }
 section .contenedor-home .img-home {
-  height: 70vh;
+  height: 75vh;
   margin-left: 0;
 }
 @media screen and (max-width: 988px) {
