@@ -34,8 +34,9 @@
 @mixin biografia{
     opacity: 0;
     animation: fadeIn-biografia 2s ease-in-out forwards;
-    width: 20rem;
+    width: 23rem;
     text-align: center;
+    font-size: 1.4rem;
     position: relative;
     top: 2.5rem;
 }
@@ -89,6 +90,7 @@
 
         @include tablet{
             padding-top: 2rem;
+            gap: 1rem;
         }
         @include mobile{
             grid-template-columns: 1fr;
@@ -100,6 +102,9 @@
 .facundo-miniello{
     @include distribucion;
     left: 10rem;
+    @include tablet {
+        left: 0;
+    }
     img{
         @include foto-perfil;
     }
@@ -123,8 +128,9 @@
 .pio-ottado{
     @include distribucion;
     right: 10rem;
-    @include mobile{
+    @include tablet{
         padding-bottom: 5rem;
+        right: 0;
     }
     img{
         @include foto-perfil;

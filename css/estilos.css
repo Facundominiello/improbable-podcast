@@ -41,6 +41,7 @@
 @media screen and (max-width: 988px) {
   .quienes-somos-contenedor .quienes-somos-integrantes {
     padding-top: 2rem;
+    gap: 1rem;
   }
 }
 @media screen and (max-width: 580px) {
@@ -58,6 +59,11 @@
   align-items: center;
   color: #F2F2F2;
   left: 10rem;
+}
+@media screen and (max-width: 988px) {
+  .facundo-miniello {
+    left: 0;
+  }
 }
 .facundo-miniello img {
   opacity: 0;
@@ -91,8 +97,9 @@
 .facundo-miniello p {
   opacity: 0;
   animation: fadeIn-biografia 2s ease-in-out forwards;
-  width: 20rem;
+  width: 23rem;
   text-align: center;
+  font-size: 1.4rem;
   position: relative;
   top: 2.5rem;
 }
@@ -112,9 +119,10 @@
   color: #F2F2F2;
   right: 10rem;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 988px) {
   .pio-ottado {
     padding-bottom: 5rem;
+    right: 0;
   }
 }
 .pio-ottado img {
@@ -149,8 +157,9 @@
 .pio-ottado p {
   opacity: 0;
   animation: fadeIn-biografia 2s ease-in-out forwards;
-  width: 20rem;
+  width: 23rem;
   text-align: center;
+  font-size: 1.4rem;
   position: relative;
   top: 2.5rem;
 }
@@ -228,7 +237,7 @@
   background-color: #ffb379;
   border: 1px solid black;
   border-radius: 10rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .contacto-formulario-contenedor .enviar:hover {
@@ -244,6 +253,7 @@
 .main-input {
   width: 35rem;
   height: 5rem;
+  font-size: 1.8rem;
   margin-left: 1.5rem;
   margin-top: 0.39rem;
   background-color: #262626;

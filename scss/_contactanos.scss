@@ -57,7 +57,7 @@
         background-color: $orange;
         border: 1px solid black;
         border-radius: 10rem;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         &:hover{
             transition: 1s;
@@ -73,6 +73,7 @@
 .main-input{
     width: 35rem;
     height: 5rem;
+    font-size: 1.8rem;
     margin-left: 1.5rem;
     margin-top: .39rem;
     background-color:$secondary-color ;
